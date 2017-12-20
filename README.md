@@ -10,9 +10,9 @@ Because Twilio's API can only create responses by executing TwiML text at a give
 To run the code, simply change the values in `config.py` as follows:
 ```python
 account_sid: Change to your Twilio SID
-auth_toke`: Change to your Twilio authentication token
+auth_token: Change to your Twilio authentication token
 from_num: Change to your registered Twilio phone number
-greet_url: Change to the URL that hosts your `greet()` view
+greet_url: Change to the URL that hosts your greet() view
 ```
 
 ## Things to Note
