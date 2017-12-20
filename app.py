@@ -62,7 +62,7 @@ def make_call(number):
 	call = client.calls.create(
 		to=number,
 		from_=config.from_num,
-		url=config.prompt_url
+		url=config.greet_url
 )
 
 
