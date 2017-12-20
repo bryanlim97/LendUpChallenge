@@ -4,13 +4,12 @@ from twilio.rest import Client
 from flask_wtf import Form
 from flask import Flask, request, redirect, render_template, flash, url_for
 from forms import ContactForm
+import config
 
 app = Flask(__name__)
-app.secret_key = 'development key'
+app.secret_key = 'PLACEHOLDER'
 
-account_sid = "AC2425372beab1b202441153b8ebb251b8"
-auth_token = "7d47175071b77edc716e761bafbaafb4"
-client = Client(account_sid, auth_token)
+client = Client(config.account_sid, config.auth_token)
 
 #Homepage with a form to submit a specified phone number
 @app.route('/', methods=['GET', 'POST'])
