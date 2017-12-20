@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h2 style = "text-align: center;">Who you gonna call?</h2>
+		
+      {% for message in form.to_num.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      <!-- If the action is POST, redirect back to root -->
+      <form action = "http://localhost:5000/" method = post>
+         <fieldset>
+            <legend>Contact</legend>
+            {{ form.hidden_tag() }}
+            
+            <div style = font-size:20px; font-weight:bold; margin-left:150px;>
+               {{ form.to_num.label }}<br>
+               {{ form.to_num }}
+               <br>
+
+               {{ form.submit() }}
+            </div>
+            
+         </fieldset>
+      </form>
+      
+   </body>
+</html>
