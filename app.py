@@ -60,9 +60,9 @@ def fizz_buzz():
 #Using Twilio's API, make a call and execute TwiML at the specified URL
 def make_call(number):
 	call = client.calls.create(
-		to= number,
-		from_="+14243873255",
-		url="https://269d2e8d.ngrok.io"
+		to=number,
+		from_=config.from_num,
+		url=config.prompt_url
 )
 
 
