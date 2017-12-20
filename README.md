@@ -8,7 +8,7 @@ The provided code fulfills the first and second phases of the coding challenge. 
 Because Twilio's API can only create responses by executing TwiML text at a given URL, there must be a separate URL for `greet()`, hence the URL redirect at line 23 of `app.py`. The `index()` function must also have its own URL so that a user who uses the app is initally directed to the root with the form.
 
 To run the code, simply change the values in `config.py` as follows:
-`account_sid`: Change to your Twilio SID
+account_sid: Change to your Twilio SID
 `auth_token`: Change to your Twilio authentication token
 `from_num`: Change to your registered Twilio phone number
 `greet_url`: Change to the URL that hosts your `greet()` view
